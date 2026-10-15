@@ -99,6 +99,7 @@ ALLOWED_ORIGINS = [
     if origin.strip()
 ]
 
+logger.info(f"CORS_ORIGINS environment variable: {os.environ.get('CORS_ORIGINS')}")
 logger.info(f"CORS allowed origins: {ALLOWED_ORIGINS}")
 
 app.add_middleware(
