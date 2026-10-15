@@ -1,0 +1,207 @@
+{
+  "algorithm": "Multinomial Naive Bayes",
+  "feature_extraction": "TF-IDF (Term Frequency-Inverse Document Frequency)",
+  "dataset": "UCI SMS Spam Collection",
+  "total_samples": 5169,
+  "training_samples": 4135,
+  "testing_samples": 1034,
+  "training_spam": 522,
+  "training_ham": 3613,
+  "testing_spam": 131,
+  "testing_ham": 903,
+  "classes": [
+    "ham (Not Spam)",
+    "spam (Spam)"
+  ],
+  "tfidf_params": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "stop_words": "english",
+    "sublinear_tf": true
+  },
+  "nb_params": {
+    "alpha": 0.1
+  },
+  "vocabulary_size": 5000,
+  "test_size": 0.2,
+  "random_state": 42,
+  "metrics": {
+    "accuracy": 0.9826,
+    "precision": 0.9669,
+    "recall": 0.8931,
+    "f1_score": 0.9286,
+    "confusion_matrix": {
+      "true_negative": 899,
+      "false_positive": 4,
+      "false_negative": 14,
+      "true_positive": 117
+    }
+  },
+  "top_spam_features": [
+    {
+      "word": "claim",
+      "score": 5.9921
+    },
+    {
+      "word": "prize",
+      "score": 5.9055
+    },
+    {
+      "word": "150p",
+      "score": 5.5319
+    },
+    {
+      "word": "18",
+      "score": 5.4605
+    },
+    {
+      "word": "guaranteed",
+      "score": 5.2946
+    },
+    {
+      "word": "1000",
+      "score": 5.2765
+    },
+    {
+      "word": "500",
+      "score": 5.2598
+    },
+    {
+      "word": "tone",
+      "score": 5.2396
+    },
+    {
+      "word": "ringtone",
+      "score": 5.1616
+    },
+    {
+      "word": "cs",
+      "score": 5.0827
+    },
+    {
+      "word": "000",
+      "score": 5.0635
+    },
+    {
+      "word": "www",
+      "score": 5.0569
+    },
+    {
+      "word": "awarded",
+      "score": 5.0291
+    },
+    {
+      "word": "http",
+      "score": 4.9942
+    },
+    {
+      "word": "tones",
+      "score": 4.9862
+    },
+    {
+      "word": "150ppm",
+      "score": 4.9714
+    },
+    {
+      "word": "landline",
+      "score": 4.9625
+    },
+    {
+      "word": "attempt",
+      "score": 4.9214
+    },
+    {
+      "word": "10p",
+      "score": 4.8327
+    },
+    {
+      "word": "800",
+      "score": 4.782
+    }
+  ],
+  "top_ham_features": [
+    {
+      "word": "gt",
+      "score": -4.8939
+    },
+    {
+      "word": "lt",
+      "score": -4.8821
+    },
+    {
+      "word": "lt gt",
+      "score": -4.7948
+    },
+    {
+      "word": "lor",
+      "score": -4.7174
+    },
+    {
+      "word": "da",
+      "score": -4.6787
+    },
+    {
+      "word": "\u00e3\u00bc",
+      "score": -4.2819
+    },
+    {
+      "word": "later",
+      "score": -4.2661
+    },
+    {
+      "word": "lol",
+      "score": -4.215
+    },
+    {
+      "word": "doing",
+      "score": -4.1966
+    },
+    {
+      "word": "ask",
+      "score": -4.0435
+    },
+    {
+      "word": "really",
+      "score": -3.9987
+    },
+    {
+      "word": "say",
+      "score": -3.9537
+    },
+    {
+      "word": "sure",
+      "score": -3.9447
+    },
+    {
+      "word": "said",
+      "score": -3.9033
+    },
+    {
+      "word": "coming",
+      "score": -3.8831
+    },
+    {
+      "word": "thing",
+      "score": -3.8622
+    },
+    {
+      "word": "gonna",
+      "score": -3.8339
+    },
+    {
+      "word": "fine",
+      "score": -3.8018
+    },
+    {
+      "word": "class",
+      "score": -3.7874
+    },
+    {
+      "word": "cos",
+      "score": -3.7656
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+.classifier-section {
+  padding: 4rem 1.5rem;
+}
+
+.section-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin: 0 0 2rem;
+}
+
+/* Examples */
+.examples {
+  margin-bottom: 1.25rem;
+}
+.examples-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.example-btn {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  background: white;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.example-btn:hover {
+  border-color: #1a1a2e;
+  color: #1a1a2e;
+  background: #f0f4ff;
+}
+
+/* Input Card */
+.input-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.message-input {
+  width: 100%;
+  border: none;
+  padding: 1.25rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 120px;
+  outline: none;
+  color: #1f2937;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.message-input::placeholder {
+  color: #9ca3af;
+}
+
+.input-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid #f3f4f6;
+  background: #fafbfc;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.input-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-clear {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+.btn-clear:hover {
+  background: #e5e7eb;
+}
+
+.btn-analyze {
+  background: #1a1a2e;
+  color: white;
+}
+.btn-analyze:hover:not(:disabled) {
+  background: #2d2d4e;
+}
+.btn-analyze:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error */
+.error-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+  padding: 0.85rem 1.1rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+/* Result Card */
+.result-card {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 14px;
+  animation: fadeIn 0.35s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-spam {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+.result-ham {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.result-spam .result-header { color: #b91c1c; }
+.result-ham .result-header { color: #15803d; }
+
+.result-label {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.result-confidence {
+  margin: 0.5rem 0 1.25rem;
+  font-size: 1rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Probability Bars */
+.prob-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.prob-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.prob-label {
+  width: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+  text-align: right;
+}
+.prob-track {
+  flex: 1;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.prob-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+.prob-spam { background: #ef4444; }
+.prob-ham { background: #22c55e; }
+.prob-value {
+  width: 52px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Contributing Words */
+.contributing-words {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.cw-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.6rem;
+}
+.cw-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.cw-tag {
+  padding: 0.25rem 0.7rem;
+  font-size: 0.8rem;
+  background: rgba(0,0,0,0.06);
+  border-radius: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.privacy-note {
+  margin-top: 1.25rem;
+  font-size: 0.78rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .input-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .input-actions {
+    justify-content: flex-end;
+  }
+  .result-card { padding: 1.5rem; }
+}

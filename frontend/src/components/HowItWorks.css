@@ -1,0 +1,89 @@
+.how-section {
+  padding: 4rem 1.5rem;
+  background: #f8fafc;
+}
+
+.how-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.step-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: #f0f4ff;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem;
+}
+
+.step-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* About NB */
+.about-nb {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.about-nb h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 1rem;
+}
+
+.about-nb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-nb li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.about-nb li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1a1a2e;
+  font-weight: bold;
+}
